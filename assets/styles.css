@@ -1,0 +1,49 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: rgb(46, 46, 184);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#dashboard-text{
+    color: white;
+    font-size: 30px;
+    font-family: 'Rubik','Nunito Sans', sans-serif;
+    margin-left: 40%;
+}
+.search{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 10px;
+    
+}
+.search-text{
+    font-family: 'Rubik','Nunito Sans', sans-serif;
+    font-size: 30px;
+    margin-left: 1px;
+}
+.city-buttons button{
+    display: block;
+    margin-bottom: 15px;
+    width: 40%;
+    background-color: gray;
+    margin-left: 10px;
+
+}
+.city-buttons{
+    margin-top: 15px;
+}
+.search-btn{
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: rgb(46, 46, 184);
+    margin-right: 8px;
+    color: white;
+    margin-top: 5%;
+}
