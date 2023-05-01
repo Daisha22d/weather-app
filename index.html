@@ -18,10 +18,12 @@
     </header>
 <!--Search bar-->
   <nav class="search">
-        <a class="search-text">Search for a city:</a>
-        <input class="form-control me-2" type="search-bar" placeholder="Search" aria-label="Search">
-        <button class="search-btn">Search</button>
+        <a id="search-text" class="search-text">Search for a city:</a>
+        <input class="form-control me-2" id="search-bar" placeholder="Search" aria-label="Search">
+        <button id="search-btn" class="search-btn">Search</button>
+        <ul id="search-history"></ul>
   </nav>
+
 <!--Location Buttons-->
   <div class="city-buttons">
     <button class="btn btn-primary" type="button-1">Atlanta</button>
@@ -33,60 +35,28 @@
     <button class="btn btn-primary" type="button-7">Chicago</button>
     <button class="btn btn-primary" type="button-8">Austin</button>
   </div>
-  <!--Forecast-->
+  <!--Current Forecast-->
   <div class="card w-75 mb-3">
-    <div class="card-body">
-      <h5 class="card-title">Atlanta (09/13/2022)</h5>
-      <span class="temp-info">Temp: 76.62°F </span>
-      <span class="temp-info">Wind: 8.43 </span>
-      <span class="temp-info">Humidity: 44% </span>
+    <div id="current-weather">
+      <h5 class="card-title city"></h5>
+      <p class="temp-info temp"></p>
+      <p class="temp-info wind"></p>
+      <p class="temp-info humidity"></p>
     </div>
   </div>
-  <!--Forecast blocks-->
+  <!--5 Day Forecast-->
   <section class="day-section" data-day-section>
-    <h5 class="day-section-title">5-Day Forecast:</h5>
-    <div class="day-card-container">
-      <div class="day-card">
-        <div class="day-card-day">9/14/2022</div>
-        <span class="temp-info">Temp: 76.62°F</span>
-        <span class="temp-info">Wind: 8.43</span>
-        <span class="temp-info">Humidity: 44%</span>
-      </div>
-      <div class="day-card">
-        <div class="day-card-day">9/15/2022</div>
-        <span class="temp-info">Temp: 76.62°F</span>
-        <span class="temp-info">Wind: 8.43</span>
-        <span class="temp-info">Humidity: 44%</span>
-      </div>
-      <div class="day-card">
-        <div class="day-card-day">9/16/2022</div>
-        <span class="temp-info">Temp: 76.62°F</span>
-        <span class="temp-info">Wind: 8.43</span>
-        <span class="temp-info">Humidity: 44%</span>
-      </div>
-      <div class="day-card">
-        <div class="day-card-day">9/17/2022</div>
-        <span class="temp-info">Temp: 76.62°F</span>
-        <span class="temp-info">Wind: 8.43</span>
-        <span class="temp-info">Humidity: 44%</span>
-      </div>
-      <div class="day-card">
-        <div class="day-card-day">9/18/2022</div>
-        <span class="temp-info">Temp: 76.62°F</span>
-        <span class="temp-info">Wind: 8.43</span>
-        <span class="temp-info">Humidity: 44%</span>
-      </div>
+    <h5 id="future-forecast">5-Day Forecast:</h5>
+    <div class="day-card-container fiveDay">
     </div>
   </section>
   
-  
-  
- 
-
+<!--Script tags-->  
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script> 
     <script src="./script.js"></script>
 
 

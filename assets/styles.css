@@ -56,7 +56,7 @@
     display: block;
     margin: 10px;
     margin-left: 0%;
-    color: white;
+    color: black;
 }
 .card-title {
     font-family: 'Rubik','Nunito Sans', sans-serif;
@@ -70,20 +70,20 @@
     margin-right: 290px;
   }
   
-  .day-section-title {
+#future-forecast {
     text-align: center;
     color: black;
     margin-right: 30px;
 
   }
   
-  .day-card-container {
+.day-card-container {
     display: flex;
     flex-direction: row;
     width: 200px;
   }
   
-  .day-card {
+.day-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +96,7 @@
     background-color: rgb(97, 94, 94);
   }
   
-  .day-card-day {
+.day-card-day {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
