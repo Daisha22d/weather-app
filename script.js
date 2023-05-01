@@ -111,5 +111,3 @@ function displayForecast(data) {
   }
   
   
-// Helper function to get the current date
-// function getCurrentDate();
